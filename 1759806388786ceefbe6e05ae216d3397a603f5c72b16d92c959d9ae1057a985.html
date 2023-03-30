@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Search by single keyword</title>
+    <title>Fetch already available pet</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -121,7 +121,7 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
-        > Search by single keyword
+        > Fetch already available pet
         </span>
         </div>
         <div class="rightbg"></div>
@@ -139,7 +139,7 @@
             <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 28-03-2023 13:49</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 30-03-2023 05:34</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -154,14 +154,14 @@
                                 <div>
                                     <h3 class="discreet-story-header">
                                         <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
-                                        <span class="story-header-title">When Searching For Terms</span>
+                                        <span class="story-header-title">When Fetching Already Available Pet</span>
                                     </h3>
                                 </div>
 
                         </td>
                         <td valign="top">
                             <p class="tag">
-                                    <span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span>
+                                    <span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i></span>
                             </p>
                         </td>
                     </tr>
@@ -174,7 +174,7 @@
                             <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
                                 <span class="success-color">
-                                    Search by single keyword
+                                    Fetch already available pet
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -206,7 +206,6 @@
                     Steps
                 </th>
 
-                    <th width="150" class="greentext">Screenshots</th>
                 <th width="130" class="greentext">Outcome</th>
                 <th width="100" class="greentext"><i title="Duration" class="bi bi-stopwatch"></i></th>
             </tr>
@@ -218,64 +217,172 @@
 
                     <td width="50" class="step-icon">
                         <a name="0"></a>
-                            <span style="margin-left: 20px;"
-                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection0 success-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
                     </td>
 
                     <td class="step-description-column">
                         <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block;">
                                 <span class="top-level-step">
-                                                Navigate to the home page
+                                                Given kitty is available in the pet store
                                         </span>
+                            </a>
                             <span class="evidence">
                                 </span>
                         </div>
                     </td>
 
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="551e573dae173d426ed5f91133c2ce7562d2d1ce19cd8f3df3addce0dcfb613f_screenshots.html#screenshots?screenshot=0">
-                                    <img src="52e2e196489143206bce3c759d4d0d6afbbdf90e8559fea16966e3d3ddeca7f0.png"
-                                         href="52e2e196489143206bce3c759d4d0d6afbbdf90e8559fea16966e3d3ddeca7f0.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">9s 434ms</span></td>
+                    <td width="100"><span class="top-level-step">2s 891ms</span></td>
                 </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection0" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="0-0"></a>
+                            <span style="margin-left: 40px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                POST https://petstore.swagger.io/v2/pet
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-2">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://petstore.swagger.io/v2/pet</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept=application/json, application/javascript, text/javascript, text/json<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre>{<br>    &quot;name&quot;: &quot;Kitty&quot;,<br>    &quot;status&quot;: &quot;available&quot;<br>}</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Date: Thu, 30 Mar 2023 05:34:41 GMT<br>Content-Type: application/json<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Access-Control-Allow-Origin: *<br>Access-Control-Allow-Methods: GET, POST, DELETE, PUT<br>Access-Control-Allow-Headers: Content-Type, api_key, Authorization<br>Server: Jetty(9.2.9.v20150224)</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;id&quot;: 9223372036854604026,<br>    &quot;name&quot;: &quot;Kitty&quot;,<br>    &quot;photoUrls&quot;: [<br>        <br>    ],<br>    &quot;tags&quot;: [<br>        <br>    ],<br>    &quot;status&quot;: &quot;available&quot;<br>}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">019ms</span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
                 <tr class="test-SUCCESS">
 
                     <td width="50" class="step-icon">
                         <a name="1"></a>
-                            <span style="margin-left: 20px;"
-                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection1 success-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
                     </td>
 
                     <td class="step-description-column">
                         <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block;">
                                 <span class="top-level-step">
-                                                Search by keyword 'Everest'
+                                                When i ask for a pet using Kitty's ID: 9223372036854604026
                                         </span>
+                            </a>
                             <span class="evidence">
                                 </span>
                         </div>
                     </td>
 
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="551e573dae173d426ed5f91133c2ce7562d2d1ce19cd8f3df3addce0dcfb613f_screenshots.html#screenshots?screenshot=1">
-                                    <img src="86b97b21397d352aec3dd1f527e189d289646ece36514d90b1a5c2a1ca95caf4.png"
-                                         href="86b97b21397d352aec3dd1f527e189d289646ece36514d90b1a5c2a1ca95caf4.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">2s 249ms</span></td>
+                    <td width="100"><span class="top-level-step">074ms</span></td>
                 </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection1" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="1-0"></a>
+                            <span style="margin-left: 40px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                GET https://petstore.swagger.io/v2/pet/9223372036854604026
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-4">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://petstore.swagger.io/v2/pet/9223372036854604026</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept=application/json, application/javascript, text/javascript, text/json<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre>{<br>    &quot;name&quot;: &quot;Kitty&quot;,<br>    &quot;status&quot;: &quot;available&quot;<br>}</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Date: Thu, 30 Mar 2023 05:34:41 GMT<br>Content-Type: application/json<br>Transfer-Encoding: chunked<br>Connection: close<br>Access-Control-Allow-Origin: *<br>Access-Control-Allow-Methods: GET, POST, DELETE, PUT<br>Access-Control-Allow-Headers: Content-Type, api_key, Authorization<br>Server: Jetty(9.2.9.v20150224)</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;id&quot;: 9223372036854604026,<br>    &quot;name&quot;: &quot;Kitty&quot;,<br>    &quot;photoUrls&quot;: [<br>        <br>    ],<br>    &quot;tags&quot;: [<br>        <br>    ],<br>    &quot;status&quot;: &quot;available&quot;<br>}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">002ms</span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
                 <tr class="test-SUCCESS">
 
                     <td width="50" class="step-icon">
@@ -288,29 +395,20 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="top-level-step">
-                                                The first heading should be 'Mount Everest'
+                                                Then i get Kitty as result
                                         </span>
                             <span class="evidence">
                                 </span>
                         </div>
                     </td>
 
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="551e573dae173d426ed5f91133c2ce7562d2d1ce19cd8f3df3addce0dcfb613f_screenshots.html#screenshots?screenshot=2">
-                                    <img src="86b97b21397d352aec3dd1f527e189d289646ece36514d90b1a5c2a1ca95caf4.png"
-                                         href="86b97b21397d352aec3dd1f527e189d289646ece36514d90b1a5c2a1ca95caf4.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">859ms</span></td>
+                    <td width="100"><span class="top-level-step">564ms</span></td>
                 </tr>
             <tr class="test-SUCCESS">
-                    <td colspan="3"></td>
+                    <td colspan="2"></td>
                 <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                <td width="100"><span class="top-level-step"><em>12.69s</em></span></td>
+                <td width="100"><span class="top-level-step"><em>3.68s</em></span></td>
             </tr>
 
         </table>
